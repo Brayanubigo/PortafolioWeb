@@ -263,7 +263,16 @@ footer .title {
  
    
 }
+.copyright{
+    margin-top: 40px;
+}
+.icon-copy{
+    vertical-align:middle;
+}
 
+.made-by-bulma{
+    margin-top: 20px;
+}
 
 
 @media screen and (max-width: 1023px)
@@ -280,6 +289,9 @@ footer .title {
         text-align: center !important;
     
     }
+    .navbar-brand{
+        margin-left: -4rem;
+    }
 }
 @media screen and (min-width: 300px)
 {
@@ -289,3 +301,7 @@ footer .title {
     }
 
 }
+/* @media screen and (min-width: 1024px){
+.container>.navbar .navbar-brand, .navbar>.container .navbar-brand {
+    margin-left: -0.75rem;
+}} */
