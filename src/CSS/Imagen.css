@@ -1,0 +1,291 @@
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20% !important;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+.imgFondo{
+    margin-top: 200px;
+    margin-bottom: -7px;
+    padding: bottom -20px;
+    width: 50%;
+    
+}
+
+.section.is-primary {
+    background-image: radial-gradient(circle at 62.28% -19.64%, #b3c341 0, #bdbb35 6.25%, #c7b329 12.5%, #d0a91e 18.75%, #d79e12 25%, #de9208 31.25%, #e38403 37.5%, #e77406 43.75%, #ea610e 50%, #ec4c18 56.25%, #ed3123 62.5%, #ee002e 68.75%, #ee0039 75%, #ed0046 81.25%, #ea0054 87.5%, #e50063 93.75%, #de0073 100%);
+    color: white;
+}
+.columns.is-xed {
+    justify-content: center;
+}
+
+.columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-top: -0.75rem;
+}
+
+.section.is-primary .title {
+    color: white;
+}
+.title {
+    color: #363636;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.125;
+}
+
+
+.section.is-primary .subtitle {
+    color: white;
+}
+
+.subtitle {
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
+}
+.margin{
+    margin:0px;
+    padding:0px;
+}
+.text-margin{
+    margin-top: 50px !important;
+}
+
+.section {
+    padding: 5rem 1.5rem;
+}
+
+.column.is-one-third, .column.is-one-third-tablet {
+    flex: none;
+    width: 33.3333%;
+}
+
+.columns.is-centered {
+    justify-content: center;
+}
+
+.has-text-centered {
+    text-align: center !important;
+}
+
+
+.svg-inline--fa.fa-stack-2x {
+    height: 3em;
+    width: 2.5em;
+}
+
+.fa-stack-1x, .fa-stack-2x {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: var(--fa-stack-z-index,auto);
+}
+
+
+
+.svg-inline--fa.fa-stack-1x {
+    height: 4em;
+    width: 1.25em;
+}
+
+
+
+footer .social-icons a.button {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 100%;
+    margin: 0 0.2rem;
+    height: 47px;
+    width: 47px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.fa-stack-1x, .fa-stack-2x {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: var(--fa-stack-z-index,auto);
+}
+
+.content h1:not(:first-child) {
+    margin-top: 1em;
+}
+
+.fa-stack {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2em;
+    position: relative;
+    width: 2.5em;
+}
+.fa-2x {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.section.skills {
+    margin-top: -9rem;
+    padding-bottom: 1rem;
+}
+
+p.list-title {
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+.p-text{
+    margin-top: 20px ;
+}
+
+li{
+    margin-top: 10px;
+}
+.ulitmoLi {
+    padding-bottom: 50px;
+}
+
+.projects .project-grid {
+    padding-top: 4rem;
+}
+
+.column.is-one-third-desktop {
+    flex: none;
+    width: 33.3333%;
+}
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    
+}
+
+.image {
+    display: block;
+    position: relative;
+}
+
+
+.projects .project-grid figure img.project-thumb {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: .25s ease-in-out;
+}
+
+.projects .project-grid figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 3rem;
+    color: #ffffff;
+    z-index: 1;
+    
+}
+
+.projects .project-grid .overlay, .projects .project-grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .45s ease-out;
+    opacity: 0;
+}
+.projects .project-grid .overlay, .projects .project-grid figcaption:hover {
+    background-image: linear-gradient(180deg, #ff71fc 0, #ff6cfc 12.5%, #ff66f6 25%, #eb5fea 37.5%, #be55d8 50%, #924bc3 62.5%, #6a42b0 75%, #443a9e 87.5%, #16348f 100%);
+    opacity: 100%;
+    
+}
+
+.projects .project-grid figure figcaption h1.title {
+    color: #ffffff;
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+}
+
+.projects .project-grid figure figcaption a.button.is-primary.is-outlined.is-rounded {
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 1.2rem;
+    font-weight: 400;
+    border-width: 3px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #ffffff;
+}
+.button.is-primary.is-outlined {
+    background-color: transparent;
+    border-color: #b217c0;
+    color: #6E07F3;
+    
+}
+.button.is-primary.is-outlined:hover {
+    
+    background-color: #6E07F3;
+    color: #6E07F3;
+    border-color: #6E07F3;
+}
+
+
+
+
+.projects .project-grid figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+footer .title {
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    max-width: 300px;
+    opacity: 0.8;
+}
+
+.logo{
+    font-size: 3em;
+ 
+   
+}
+
+
+
+@media screen and (max-width: 1023px)
+{
+    .logo{
+        font-size: 2em;  
+       
+    }
+    .imgFondo{
+        width: 100%;
+    }
+    
+    .column{
+        text-align: center !important;
+    
+    }
+}
+@media screen and (min-width: 300px)
+{
+
+    .center{
+        width: 210px !important;
+    }
+
+}
