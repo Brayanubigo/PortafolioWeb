@@ -1,7 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
 import Avatar from '../assets/lupe.png'
 function Contact() {
-  return (
+   
+ const [name, setName] = useState()
+const [email, setEmail] = useState()
+const [Mensaje, setMensaje] = useState()
+    
+    const resetForm = () => {
+        setName("")
+        setEmail("")
+        setMensaje("")
+      }
+   
+
+    return (
     <div>
         <nav class="navbar is-transparent is-planner animate-fadeDown">
       <div class="container">
@@ -9,7 +22,7 @@ function Contact() {
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end">
             <div class="navbar-item">
-              <p class="buttons"><a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Reset" onclick="document.getElementById('form').reset();"><span class="icon is-small"><svg class="svg-inline--fa fa-undo-alt" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="undo-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M48.5 224H40c-13.3 0-24-10.7-24-24V72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8H48.5z"></path></svg></span></a><a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Close" href="/"><span class="icon is-small"><svg class="svg-inline--fa fa-times" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg></span></a></p>
+              <p class="buttons"><a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Reset" onClick={() => resetForm()}><span class="icon is-small"><svg class="svg-inline--fa fa-undo-alt" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="undo-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M48.5 224H40c-13.3 0-24-10.7-24-24V72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8H48.5z"></path></svg></span></a><a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Close" href="/"><span class="icon is-small"><svg class="svg-inline--fa fa-times" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg></span></a></p>
             </div>
           </div>
         </div>
@@ -27,13 +40,13 @@ function Contact() {
       </section>
       <section class="is-white">
         <div class="container">
-          <form accept-charset="UTF-8" action="https://usebasin.com/f/363b98eca5af" method="POST">
+          <form id="#form" accept-charset="UTF-8" action="https://usebasin.com/f/363b98eca5af" method="POST">
             <div class="columns is-centered">
               <div class="column is-half">
                 <div class="field">
                   <label class="label">Nombre</label>
                   <div class="control is-expanded">
-                    <input class="input is-large" name="name" type="text" required=""/>
+                    <input class="input is-large" name="name" type="text" required="" value={name} onChange={(e) => setName(e.target.value)}/>
                   </div>
                 </div>
               </div>
@@ -41,7 +54,7 @@ function Contact() {
                 <div class="field">
                   <label class="label">Email</label>
                   <div class="control is-expanded">
-                    <input class="input is-large" name="email" type="email" required=""/>
+                    <input class="input is-large" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                   </div>
                 </div>
               </div>
@@ -51,7 +64,7 @@ function Contact() {
                 <div class="field">
                   <label class="label">Mensaje</label>
                   <div class="control is-expanded">
-                    <textarea class="textarea is-large" name="message" rows="5" required=""></textarea>
+                    <textarea class="textarea is-large" name="message" rows="5" required="" value={Mensaje} onChange={(e) => setMensaje(e.target.value)}></textarea>
                   </div>
                 </div>
                 <div class="field is-hidden">
