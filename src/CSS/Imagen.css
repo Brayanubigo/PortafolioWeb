@@ -301,6 +301,16 @@ footer .title {
     }
 
 }
+.bordes{
+   border-color: #363636 !important;
+}
+
+.is-form-page .container .avatar {
+    width: 150px;
+    margin:  auto 50px;
+    z-index: 10;
+    border-radius: 100%;
+}
 /* @media screen and (min-width: 1024px){
 .container>.navbar .navbar-brand, .navbar>.container .navbar-brand {
     margin-left: -0.75rem;

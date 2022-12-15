@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Avatar from '../assets/lupe.png'
+import Project from '../assets/PORTADA-PERRO.jpg'
+import Project2 from '../assets/duoc.jpg'
 import Fondo from '../assets/hero-devices.svg';
 import "../assets/hero-devices.svg";
 import '../CSS/Imagen.css'
@@ -59,7 +61,7 @@ function Content() {
             <svg class="svg-inline--fa fa-layer-plus fa-stack-1x has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="layer-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M448 64H488C496.8 64 504 71.16 504 80C504 88.84 496.8 96 488 96H448V136C448 144.8 440.8 152 432 152C423.2 152 416 144.8 416 136V96H376C367.2 96 360 88.84 360 80C360 71.16 367.2 64 376 64H416V24C416 15.16 423.2 8 432 8C440.8 8 448 15.16 448 24V64zM277.8 132.7L495.2 230.1C505.4 234.7 512 244.8 512 256C512 267.2 505.4 277.3 495.2 281.9L277.8 379.3C270.1 382.4 263.5 384 256 384C248.5 384 241 382.4 234.2 379.3L16.76 281.9C6.561 277.3 .0003 267.2 .0003 256C.0003 244.8 6.561 234.7 16.76 230.1L234.2 132.7C241 129.6 248.5 128 256 128C263.5 128 270.1 129.6 277.8 132.7V132.7zM37.27 256L247.2 350.1C249.1 351.4 252.1 352 256 352C259 352 262 351.4 264.8 350.1L474.7 256L264.8 161.9C262 160.6 259 160 256 160C252.1 160 249.1 160.6 247.2 161.9L37.27 256zM37.27 384L247.2 478.1C249.1 479.4 252.1 480 256 480C259 480 262 479.4 264.8 478.1L474.7 384L441.5 369.1C433.4 365.5 429.8 356 433.4 347.9C437 339.9 446.5 336.3 454.5 339.9L495.2 358.1C505.4 362.7 512 372.8 512 384C512 395.2 505.4 405.3 495.2 409.9L277.8 507.3C270.1 510.4 263.5 512 256 512C248.5 512 241 510.4 234.2 507.3L16.76 409.9C6.561 405.3 0 395.2 0 384C0 372.8 6.561 362.7 16.76 358.1L57.46 339.9C65.52 336.3 74.99 339.9 78.6 347.9C82.21 356 78.61 365.5 70.54 369.1L37.27 384z"></path></svg>
           </span>
             <h1 class="title is-size-4 is-spaced"> BackEnd Developer</h1>
-            <p> Me gusta codificar cosas desde cero y disfrutar, dando vida a las ideas en el navegador.</p>
+            <p> Me gusta codificar cosas desde cero.</p>
             <p class="list-title has-text-primary has-text-weight-normal">Cosas que me gusta diseñar:</p>
             <p >Web, Apps</p>
             <p class="list-title has-text-primary has-text-weight-normal">Conocimineto:</p>
@@ -115,19 +117,19 @@ function Content() {
         <div class="columns is-multiline is-mobile ">
           <div class="column is-12-mobile  " >
               <figure class="image is-3by2">
-                  <img src={Avatar} alt="" />
+                  <img src={Project} alt="" />
                   <figcaption className=''>
-                    <h1 class="title is-size-5 is-size-4-widescreen"> COMING SOON</h1>
-                    <a class="button is-primary is-outlined is-rounded " href="/"> <span>Visitar</span></a>
+                    <h1 class="title is-size-5 is-size-4-widescreen"> MIS PERRIS (Duoc uc) </h1>
+                    <a class="button is-primary is-outlined is-rounded " href="https://github.com/Brayanubigo/Mis-perris" target="_blank"> <span>Visitar</span></a>
                   </figcaption>
               </figure>
           </div>
-          <div class="column is-12-mobile ">
+          <div class="column is-12-mobile  ">
               <figure class="image is-3by2">
-                  <img src={Avatar} alt="" />
+                  <img src={Project2} alt="" />
                   <figcaption>
-                    <h1 class="title is-size-5 is-size-4-widescreen"> COMING SOON</h1>
-                    <a class="button is-primary is-outlined is-rounded" href="/">Visitar</a>
+                    <h1 class="title is-size-5 is-size-4-widescreen"> Portafolio de titulo</h1>
+                    <a class="button is-primary is-outlined is-rounded " href="https://github.com/Brayanubigo/Portafoliov2" target="_blank">Visitar</a>
                   </figcaption>
               </figure>
           </div>
@@ -135,8 +137,8 @@ function Content() {
               <figure class="image is-3by2">
                   <img src={Avatar} alt="" />
                   <figcaption>
-                    <h1 class="title is-size-5 is-size-4-widescreen"> COMING SOON</h1>
-                    <a class="button is-primary is-outlined is-rounded" href="/">Visitar</a>
+                    <h1 class="title is-size-5 is-size-4-widescreen"> EN DESARROLLO</h1>
+                    <a class="button is-primary is-outlined is-rounded " href="https://github.com/Brayanubigo/Portafoliov2" target="_blank">Visitar</a>
                   </figcaption>
               </figure>
           </div>

@@ -2,7 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import BurgerButton from './BurgerButton';
 import styled from 'styled-components';
-import Logo from '../assets/pngwing.com (1).png'
+import Logo from '../assets/pngwing.com (1).png';
+import { BrowserRouter as Router ,  Route, Link, Routes } from 'react-router-dom';
 
 function Header() {
     const [clicked, setClicked] = useState(false)
@@ -29,9 +30,9 @@ function Header() {
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-danger is-outlined is-rounded has-text-weight-normal animate__animated animate__jello">
+          <Link class="button is-danger is-outlined is-rounded has-text-weight-normal animate__animated animate__jello" to='/contacto'>
             <strong>Saludar!</strong>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

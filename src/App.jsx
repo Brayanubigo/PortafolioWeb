@@ -1,20 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import 'bulma/css/bulma.min.css'
-import Header from './Components/Header'
-import Content from './Components/Content'
-import Footer from './Components/footer'
-
 import 'animate.css';
+import { BrowserRouter as Router ,  Route, Link, Routes } from 'react-router-dom';
+import Inicio from './Components/Inicio';
+import Contact from './Components/Contact';
+
 function App() {
   
 
   return (
+    <Router>
     <div >
-      <Header/>
-      <Content/>
-      <Footer/>
+      
+      <Routes>
+        <Route path='/' exact element={<Inicio/>}/>
+
+      
+        <Route path='/contacto' exact element={<Contact/>}/>
+      </Routes>
     </div>
+    </Router>
   )
 }
 
