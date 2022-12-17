@@ -5,6 +5,7 @@ import Project from '../assets/PORTADA-PERRO.jpg'
 import Project2 from '../assets/duoc.jpg'
 import Project3 from '../assets/Buffon.jpg'
 import Fondo from '../assets/hero-devices.svg';
+import {  Link } from 'react-router-dom';
 import "../assets/hero-devices.svg";
 import '../CSS/Imagen.css'
 import 'animate.css';
@@ -112,7 +113,7 @@ function Content() {
 <section class="section projects is-medium is-white has-text-centered">
     <div class="container is-narrow">
       <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Mis trabajos recientes.</h1>
-      <h2 class="subtitle is-size-5-desktop">Aquí hay algunos proyectos anteriores en los que he trabajado. ¿Quieres ver más? <a class="has-text-weight-normal" href="brayan.ubigo@gmail.com">Email</a>
+      <h2 class="subtitle is-size-5-desktop">Aquí hay algunos proyectos anteriores en los que he trabajado. ¿Quieres ver más? <Link class="has-text-weight-normal"  to='/contacto'>Email</Link>
        </h2>
     <div className='project-grid'>
         <div class="columns is-multiline is-mobile ">
@@ -139,7 +140,7 @@ function Content() {
                   <img src={Project3} alt="" />
                   <figcaption>
                     <h1 class="title is-size-5 is-size-4-widescreen"> EN DESARROLLO</h1>
-                    <a class="button is-primary is-outlined is-rounded " href="https://github.com/Brayanubigo/Portafoliov2" target="_blank">Visitar</a>
+                    <a class="button is-primary is-outlined is-rounded " href="https://github.com/Brayanubigo/Portafoliov2" target="_blank" >Visitar</a>
                   </figcaption>
               </figure>
           </div>
