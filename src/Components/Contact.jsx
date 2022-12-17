@@ -1,18 +1,79 @@
-import React from 'react';
-import { useState } from 'react';
+import { ErrorResponse } from '@remix-run/router';
+import React ,{ useRef, useState }from 'react';
 import Avatar from '../assets/lupe.png'
-function Contact() {
-   
- const [name, setName] = useState()
-const [email, setEmail] = useState()
-const [Mensaje, setMensaje] = useState()
-    
-    const resetForm = () => {
+import emailjs from '@emailjs/browser';
+import validator from 'validator'
+import Swal from 'sweetalert2'
+import { useForm } from "react-hook-form";
+function Contact(datos) {
+
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [massage, setMassage] = useState('');
+const [emailError, setEmailError] = useState();   
+
+
+const resetForm = () => {
         setName("")
         setEmail("")
-        setMensaje("")
+        setMassage("")
       }
-   
+    
+  const form = useRef();
+  
+
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors }
+  } = useForm(form.current);
+
+  const validateEmail = (e) => {
+    var email = e.target.value
+  
+    if (validator.isEmail(email)) {
+      setEmailError('Email valido')
+      return true;
+    } else {
+      setEmailError('Ingresa un email valido')
+      return false;
+    }
+  }
+
+ 
+const sendEmail = (e) => {
+  e.preventDefault();
+  
+  if (!name == "" && !email == "" && !massage == ""){
+  emailjs.sendForm('service_2se1r8r', 'template_kyvdk1n', e.target, 'X5zHYYE_N-Z9EkKUg')
+    .then((result) => {
+      Swal.fire({
+        title: 'Enviado!',
+        text: 'Su correo fue enviado!',
+        icon: 'success',
+        confirmButtonText: 'Ok'
+      })  
+      console.log(result.text);
+      resetForm();
+    }, (error) => {
+        console.log(error.text);
+    });
+
+  }else{
+    Swal.fire({
+      title: 'Error',
+      text: 'Todos los campos deben ser llenados',
+      icon: 'error',
+      confirmButtonText: 'Ok'
+    })  
+  }
+};
+
+
+
+
+
 
     return (
     <div>
@@ -40,13 +101,14 @@ const [Mensaje, setMensaje] = useState()
       </section>
       <section class="is-white">
         <div class="container">
-          <form id="#form" accept-charset="UTF-8" action="https://usebasin.com/f/363b98eca5af" method="POST">
+          <form id="form" ref={form} accept-charset="UTF-8" action="" method="POST" onSubmit={sendEmail}>
             <div class="columns is-centered">
               <div class="column is-half">
                 <div class="field">
                   <label class="label">Nombre</label>
                   <div class="control is-expanded">
-                    <input class="input is-large" name="name" type="text" required="" value={name} onChange={(e) => setName(e.target.value)}/>
+                    <input  class="input is-large" id="nombre" name="nombre" type="text" required="" value={name} onChange={(e) => setName(e.target.value)}/>
+             
                   </div>
                 </div>
               </div>
@@ -54,7 +116,11 @@ const [Mensaje, setMensaje] = useState()
                 <div class="field">
                   <label class="label">Email</label>
                   <div class="control is-expanded">
-                    <input class="input is-large" name="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input class="input is-large" id="email" name="email" value={email} onChange={(e) => {setEmail(e.target.value); validateEmail(e) }}/>
+                    <span style={{
+          fontWeight: 'bold',
+          color: 'red',
+        }}>{emailError}</span>
                   </div>
                 </div>
               </div>
@@ -64,7 +130,7 @@ const [Mensaje, setMensaje] = useState()
                 <div class="field">
                   <label class="label">Mensaje</label>
                   <div class="control is-expanded">
-                    <textarea class="textarea is-large" name="message" rows="5" required="" value={Mensaje} onChange={(e) => setMensaje(e.target.value)}></textarea>
+                    <textarea class="textarea is-large" id="message" name="message" rows="5" required="" value={massage} onChange={(e) => setMassage(e.target.value)}></textarea>
                   </div>
                 </div>
                 <div class="field is-hidden">
@@ -79,7 +145,7 @@ const [Mensaje, setMensaje] = useState()
               <div class="column is-one-third">
                 <div class="field">
                   <div class="control">
-                    <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded">Submit</button>
+                    <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded" type='submit' >Enviar</button>
                   </div>
                 </div>
               </div>

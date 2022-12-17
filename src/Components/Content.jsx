@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Avatar from '../assets/lupe.png'
 import Project from '../assets/PORTADA-PERRO.jpg'
 import Project2 from '../assets/duoc.jpg'
+import Project3 from '../assets/Buffon.jpg'
 import Fondo from '../assets/hero-devices.svg';
 import "../assets/hero-devices.svg";
 import '../CSS/Imagen.css'
@@ -135,7 +136,7 @@ function Content() {
           </div>
           <div class="column is-12-mobile">
               <figure class="image is-3by2">
-                  <img src={Avatar} alt="" />
+                  <img src={Project3} alt="" />
                   <figcaption>
                     <h1 class="title is-size-5 is-size-4-widescreen"> EN DESARROLLO</h1>
                     <a class="button is-primary is-outlined is-rounded " href="https://github.com/Brayanubigo/Portafoliov2" target="_blank">Visitar</a>
