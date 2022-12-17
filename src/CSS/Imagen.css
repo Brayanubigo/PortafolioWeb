@@ -344,6 +344,13 @@ footer .title {
         
         
 }
+
+.logo-cont{
+    font-size: 2em;  
+    margin-top: 20px;
+    margin-left:-20px;
+   
+}
 }
 /* @media screen and (min-width: 1024px){
 .container>.navbar .navbar-brand, .navbar>.container .navbar-brand {
