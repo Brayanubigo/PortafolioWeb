@@ -29,7 +29,7 @@ function Header() {
 
     <div class="navbar-end">
       <div class="navbar-item">
-        <div class="buttons">
+        <div class="buttons ">
           <Link class="button is-danger is-outlined is-rounded has-text-weight-normal animate__animated animate__jello" to='/contacto'>
             <strong>Saludar!</strong>
           </Link>
@@ -51,7 +51,7 @@ const Nav = styled.nav`
     
       margin:0px;
       margin-left:100px;
-      with:300px !important;
+     
       
       }
     }

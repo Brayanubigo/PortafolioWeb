@@ -16,11 +16,13 @@ function BurgerButton(props) {
   </a> 
     
   </div>
-  <div class="navbar-menu buttons burger">
+
+  <div class={`navbar-menu burger ${props.clicked ? 'is-active': ''} ` } >
           <a class="button is-danger is-outlined is-rounded has-text-centered has-text-weight-normal animate__animated animate__jello ">
             <strong>Saludar!</strong>
           </a>
         </div>
+       
   </Burger>
   )
 }
@@ -33,6 +35,7 @@ top: 8px;
 right: 16px;
 margin-right:auto;
 
+
 }
 
 .burger{
@@ -42,5 +45,7 @@ margin-right:auto;
   
 }
 
+
 `
+
 

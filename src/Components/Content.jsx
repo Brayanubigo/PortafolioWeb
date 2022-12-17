@@ -97,6 +97,7 @@ function Content() {
                 <li>Bootstrap</li>
                 <li>Github</li>
                 <li>React Js</li>
+                <li>Ant Desing</li>
                 <li className='ulitmoLi'>Tailwind</li>
                 
                
