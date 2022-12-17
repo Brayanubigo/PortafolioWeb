@@ -14,7 +14,7 @@ function Header() {
     <Nav> 
      <nav class="navbar back" role="navigation" aria-label="main navigation">
   <div className='container'>
-  <div class="navbar-brand">
+  <div class="navbar-brand navbar-logo">
     <a class="navbar-item" href="/">
    <div className='logo'>
    

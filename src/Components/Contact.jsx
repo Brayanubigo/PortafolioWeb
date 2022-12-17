@@ -76,10 +76,10 @@ const sendEmail = (e) => {
 
 
     return (
-    <div>
-        <nav class="navbar is-transparent is-planner animate-fadeDown">
+    <div className='separate'>
+        <nav class="navbar is-transparent is-planner animate-fadeDown is-mobile">
       <div class="container">
-        <div class="navbar-brand"><a class="navbar-item logo" href="/"> <svg class="svg-inline--fa fa-square-terminal fa-stack-1x fa-stack-1x2 has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="square-terminal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M106.4 147.9L218.4 243.9C221.1 246.9 224 251.3 224 256C224 260.7 221.1 265.1 218.4 268.1L106.4 364.1C99.7 369.9 89.6 369.1 83.85 362.4C78.1 355.7 78.88 345.6 85.59 339.9L183.4 256L85.59 172.1C78.88 166.4 78.1 156.3 83.85 149.6C89.6 142.9 99.7 142.1 106.4 147.9V147.9zM368 352C376.8 352 384 359.2 384 368C384 376.8 376.8 384 368 384H208C199.2 384 192 376.8 192 368C192 359.2 199.2 352 208 352H368zM384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM384 64H64C46.33 64 32 78.33 32 96V416C32 433.7 46.33 448 64 448H384C401.7 448 416 433.7 416 416V96C416 78.33 401.7 64 384 64z"></path></svg></a></div>
+        <div class="navbar-brand navbar-logo-cont"><a class="navbar-item logo-cont" href="/"> <svg class="svg-inline--fa fa-square-terminal fa-stack-1x fa-stack-1x2 has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="square-terminal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M106.4 147.9L218.4 243.9C221.1 246.9 224 251.3 224 256C224 260.7 221.1 265.1 218.4 268.1L106.4 364.1C99.7 369.9 89.6 369.1 83.85 362.4C78.1 355.7 78.88 345.6 85.59 339.9L183.4 256L85.59 172.1C78.88 166.4 78.1 156.3 83.85 149.6C89.6 142.9 99.7 142.1 106.4 147.9V147.9zM368 352C376.8 352 384 359.2 384 368C384 376.8 376.8 384 368 384H208C199.2 384 192 376.8 192 368C192 359.2 199.2 352 208 352H368zM384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM384 64H64C46.33 64 32 78.33 32 96V416C32 433.7 46.33 448 64 448H384C401.7 448 416 433.7 416 416V96C416 78.33 401.7 64 384 64z"></path></svg></a></div>
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end">
             <div class="navbar-item">
@@ -106,8 +106,8 @@ const sendEmail = (e) => {
               <div class="column is-half">
                 <div class="field">
                   <label class="label">Nombre</label>
-                  <div class="control is-expanded">
-                    <input  class="input is-large" id="nombre" name="nombre" type="text" required="" value={name} onChange={(e) => setName(e.target.value)}/>
+                  <div class="control is-expanded ">
+                    <input  class="input is-large input-name-ct" id="nombre" name="nombre" type="text" required="" value={name} onChange={(e) => setName(e.target.value)}/>
              
                   </div>
                 </div>
@@ -116,7 +116,7 @@ const sendEmail = (e) => {
                 <div class="field">
                   <label class="label">Email</label>
                   <div class="control is-expanded">
-                    <input class="input is-large" id="email" name="email" value={email} onChange={(e) => {setEmail(e.target.value); validateEmail(e) }}/>
+                    <input class="input is-large input-name-ct" id="email" name="email" value={email} onChange={(e) => {setEmail(e.target.value); validateEmail(e) }}/>
                     <span style={{
           fontWeight: 'bold',
           color: 'red',
@@ -129,24 +129,26 @@ const sendEmail = (e) => {
               <div class="column">
                 <div class="field">
                   <label class="label">Mensaje</label>
-                  <div class="control is-expanded">
-                    <textarea class="textarea is-large" id="message" name="message" rows="5" required="" value={massage} onChange={(e) => setMassage(e.target.value)}></textarea>
+                  <div class="control is-expanded input-name-ct ">
+                    <textarea class="textarea is-large " id="message" name="message" rows="5" required="" value={massage} onChange={(e) => setMassage(e.target.value)}></textarea>
                   </div>
                 </div>
                 <div class="field is-hidden">
                   <label class="is-hidden"></label>
-                  <div class="control is-expanded is-hidden">
+                  <div class="control is-expanded is-hidden ">
                     <input class="is-hidden" name="bot_vortex" type="hidden"/>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="columns is-centered">
-              <div class="column is-one-third">
-                <div class="field">
-                  <div class="control">
-                    <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded" type='submit' >Enviar</button>
-                  </div>
+            <div class="columns is-centered ">
+              <div class="column is-one-third ">
+                <div class="field ">
+                  <div class="control ">
+                
+                    <button class=" move button is-danger is-outlined is-rounded is-medium is-fullwidth animate__animated animate__jello"><strong>Enviar!</strong></button></div>
+                    
+                 
                 </div>
               </div>
             </div>
