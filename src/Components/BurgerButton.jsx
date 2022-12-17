@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 function BurgerButton(props) {
   return (
@@ -18,9 +19,9 @@ function BurgerButton(props) {
   </div>
 
   <div class={`navbar-menu burger ${props.clicked ? 'is-active': ''} ` } >
-          <a class="button is-danger is-outlined is-rounded has-text-centered has-text-weight-normal animate__animated animate__jello ">
+          <Link class="button is-danger is-outlined is-rounded has-text-centered has-text-weight-normal animate__animated animate__jello " to="/contacto">
             <strong>Saludar!</strong>
-          </a>
+          </Link>
         </div>
        
   </Burger>
