@@ -43,7 +43,7 @@ function Content() {
     <div class="columns is-centered ">
         <div class="column is-three-fifths  ">
         <h1 class="title is-size-2-desktop is-size-4-mobile " >Hola, Yo soy Brayan. Gusto en conocerte.</h1>
-        <h2 class="subtitle is-size-5-desktop has-text-weight-normal text-margin" >Desde que comencé mi viaje como programadro, he realizado trabajos remotos para agencias, asesorado para nuevas empresas y colaborado con personas talentosas para crear productos digitales para uso comercial y de consumo. Soy tranquilamente confiado, naturalmente curioso y trabajo perpetuamente para mejorar mis habilidades, un problema a la vez.</h2>
+        <h2 class="subtitle is-size-5-desktop has-text-weight-normal text-margin" >Desde que comencé mi viaje como programador, he realizado trabajos remotos para agencias, asesorado para nuevas empresas y colaborado con personas talentosas para crear productos digitales para uso comercial y de consumo. Soy tranquilamente confiado, naturalmente curioso y trabajo perpetuamente para mejorar mis habilidades, un problema a la vez.</h2>
         </div>
     </div>
     </div>
