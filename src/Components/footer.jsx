@@ -13,7 +13,7 @@ function footer() {
     </div>
     <div class="social-icons">
         <p class="field">
-            <a class="button is-medium" href="">
+            <a class="button is-medium" href="https://www.linkedin.com/in/brayan-alejandro-ubillo-godoy-47b265235/" target="_blank">
                 <span class="icon is-small"> 
                 <FaLinkedinIn/>
                 </span>
