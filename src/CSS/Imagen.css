@@ -208,7 +208,7 @@ li{
     opacity: 0;
 }
 .projects .project-grid .overlay, .projects .project-grid figcaption:hover {
-    background-image: linear-gradient(180deg, #ff71fc 0, #ff6cfc 12.5%, #ff66f6 25%, #eb5fea 37.5%, #be55d8 50%, #924bc3 62.5%, #6a42b0 75%, #443a9e 87.5%, #16348f 100%);
+    background-image: radial-gradient(circle at 62.28% -19.64%, #b3c341 0, #bdbb35 6.25%, #c7b329 12.5%, #d0a91e 18.75%, #d79e12 25%, #de9208 31.25%, #e38403 37.5%, #e77406 43.75%, #ea610e 50%, #ec4c18 56.25%, #ed3123 62.5%, #ee002e 68.75%, #ee0039 75%, #ed0046 81.25%, #ea0054 87.5%, #e50063 93.75%, #de0073 100%);
     opacity: 100%;
     
 }
@@ -354,6 +354,13 @@ footer .title {
     margin-top: 20px;
     margin-left:-20px;
    
+}
+.imagenProject{
+   display: flex;
+   flex: auto;
+   align-items: center;
+  
+
 }
 }
 /* @media screen and (min-width: 1024px){

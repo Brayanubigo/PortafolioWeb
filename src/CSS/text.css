@@ -3,11 +3,14 @@
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    
 }
 li{
-    margin: 10px;
+    margin: 5px;
+    text-align: center;
 }
 .imagen{
     margin: 0 auto;
+    
 
 }

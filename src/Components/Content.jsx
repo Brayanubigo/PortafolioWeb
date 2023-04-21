@@ -6,13 +6,15 @@ import Project2 from '../assets/duoc.jpg'
 import Project3 from '../assets/Buffon.jpg'
 import node from '../assets/pngwing.png'
 import mongo from '../assets/mongo.png'
-import tailwind from '../assets/featured.png'
+import tailwind from '../assets/tailwind.png'
 import reactlogo from '../assets/logo-react-icon.png'
 import Fondo from '../assets/hero-devices.svg';
 import antlogo from '../assets/ant-design-logo.png'
 import oracle from '../assets/Oracle.png'
 import python from '../assets/python.png'
 import django from '../assets/django-python-logo.png'
+import logolbla from '../assets/acacias.jpg'
+import matrialUI from '../assets/material.png'
 import {  Link } from 'react-router-dom';
 import "../assets/hero-devices.svg";
 import '../CSS/Imagen.css'
@@ -153,16 +155,16 @@ function Content() {
                   <figcaption>
                     <h1 class="title is-size-5 is-size-4-widescreen"> Portafolio de titulo</h1>
                     <ul class="columns is-mobile par-color ">
-                      <li class=""> <figure class="image is-48x48 imagen">
+                      <li class=""> <figure class="image is-32x32 imagen">
   <img class="is-rounded " src={node}/>
 </figure> Node js</li>
-                      <li>  <figure class="image is-48x48 imagen">
+                      <li>  <figure class="image is-32x32 imagen">
   <img class="is-rounded" src={oracle}/>
 </figure> OracleBD</li>
-                      <li> <figure class="image is-48x48 imagen">
+                      <li> <figure class="image is-32x32 imagen">
   <img class="is-rounded" src={antlogo}/>
 </figure> Ant Design</li>
-                      <li><figure class="image is-48x48 imagen">
+                      <li><figure class="image is-32x32 imagen">
   <img class="is-rounded" src={reactlogo}/>
 </figure>React Js</li>
                     </ul>
@@ -176,16 +178,16 @@ function Content() {
                   <figcaption>
                     <h1 class="title is-size-5 is-size-4-widescreen"> Owlypragh</h1>
                     <ul class="columns is-mobile par-color ">
-                      <li class=""> <figure class="image is-48x48 imagen">
+                      <li class=""> <figure class="image is-32x32 imagen">
   <img class="is-rounded " src={node}/>
 </figure> Node js</li>
-                      <li>  <figure class="image is-48x48 imagen">
+                      <li>  <figure class="image is-32x32 imagen">
   <img class="is-rounded" src={mongo}/>
-</figure> MongoDb</li>
-                      <li> <figure class="image is-48x48 imagen">
+</figure> MongoDB</li>
+                      <li> <figure class="image is-32x32 imagen">
   <img class="is-rounded" src={tailwind}/>
 </figure> Tailwind</li>
-                      <li><figure class="image is-48x48 imagen">
+                      <li><figure class="image is-32x32 imagen">
   <img class="is-rounded" src={reactlogo}/>
 </figure>React Js</li>
                     </ul>
@@ -195,10 +197,59 @@ function Content() {
               </figure>
           </div>
        
+
+       
         </div>
     </div>
     </div>
+
+
+    <div class="container is-narrow">
+     
+     <div className='project-grid'>
+         <div class="columns is-multiline is-mobile ">
+           <div class="column is-12-mobile  " >
+               <figure class="image is-3by2  ">
+                   <img class='imagenProject' src={logolbla}  alt="LBLA INSUMOS" />
+                   <figcaption className=''>
+                     <h1 class="title is-size-5 is-size-4-widescreen"> LBLA SOLICITUD DE INSUMOS </h1>
+                     <ul class="columns is-mobile par-color ">
+                       <li class=""> <figure class="image is-32x32 imagen">
+   <img class="is-rounded " src={node}/>
+ </figure> Node js</li>
+                       <li>  <figure class="image is-32x32 imagen">
+   <img class="is-rounded" src={reactlogo}/>
+ </figure> React JS</li>
+ <li>  <figure class="image is-32x32 imagen">
+   <img class="is-rounded" src={mongo}/>
+ </figure> MongoDB</li>
+ <li>  <figure class="image is-32x32 imagen">
+   <img class="is-rounded" src={matrialUI}/>
+ </figure> Material UI</li>
+                     </ul>
+                     <a class="button is-primary is-outlined is-rounded " href="https://github.com/Brayanubigo/LBLA_FrontEnd" target="_blank"> <span>Visitar</span></a>
+                   </figcaption>
+               </figure>
+           </div>
+           <div class="column is-12-mobile  ">
+      
+           </div>
+           <div class="column is-12-mobile">
+            
+           </div>
+        
+ 
+        
+         </div>
+     </div>
+     </div>
 </section>
+
+
+
+ 
+
+
 </>
 
  
