@@ -30,7 +30,7 @@ function Header() {
     <div className="navbar-end">
       <div className="navbar-item">
         <div className="buttons ">
-          <Link className="button is-danger is-outlined is-rounded has-text-weight-normal animate__animated animate__jello" to='/contacto'>
+          <Link class="button is-danger is-outlined is-rounded has-text-weight-normal animate__animated animate__jello" to='/contacto'>
             <strong>Saludar!</strong>
           </Link>
         </div>
