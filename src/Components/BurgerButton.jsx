@@ -18,8 +18,8 @@ function BurgerButton(props) {
     
   </div>
 
-  <div class={`navbar-menu burger ${props.clicked ? 'is-active': ''} ` } >
-          <Link class="button is-danger is-outlined is-rounded has-text-centered has-text-weight-normal animate__animated animate__jello " to="/contacto">
+  <div className={`navbar-menu burger ${props.clicked ? 'is-active': ''} ` } >
+          <Link className="button is-danger is-outlined is-rounded has-text-centered has-text-weight-normal animate__animated animate__jello " to="/contacto">
             <strong>Saludar!</strong>
           </Link>
         </div>
